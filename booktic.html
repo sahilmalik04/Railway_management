@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Book your Ticket </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container bg">
+        <h1> Railway Management </h1>
+        <hr class="hrline">
+
+        <a href="home.php"> Home </a>
+        <a href="availabletrains.html"> Available Trains </a> 
+        <a href="#"> Book Ticket </a>
+        <a href="userbooking.php"> My Bookings </a> 
+        <a href="myaccount.php"> My Account</a>
+        <a href="logout.php" onclick="confirm()">  Logout</a> <br>
+
+        <form class="form" action="bookticket.php" method="POST">
+            <h4> Book your Ticket </h4>
+            <hr>
+
+            <table class="table table-hover table-secondary">
+                <tr>
+                    <td> <label for="fromcity"> From City:
+                    <td> <select name="fromcity">
+                            <option></option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Ludhiana">Ludhiana</option> 
+                        </select> </td> </label></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="tocity"> To City:
+                    <td><select name="tocity">
+                            <option></option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Ludhiana">Ludhiana</option>
+                            <option value="Bangalore">Bangalore</option>
+                        </select></label>
+                    </td>
+                </tr> <br>
+
+                <tr>
+                    <td>
+                        <label> Date:
+                    <td><input type="date" name="date"> </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label> Passenger: </label>
+                    <td> <input type="checkbox" class="radio"  name="box" value="child" />Child
+                      
+                        <input type="checkbox" class="radio"  name="box" value="adult" />Adult
+             
+                        <input type="checkbox" class="radio"  name="box" value="infant" />Infant
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Class:
+                    <td> <label for="Ac">
+                            <input type="radio" name="boxes" value="ac" id="Ac"> Ac </label>
+                        <label for="sleeper">
+                            <input type="radio" name="boxes" value="sleeper" id="sleeper"> Sleeper </label>
+                        <label for="gnrl">
+                            <input type="radio" name="boxes" value="gnrl" id="gnrl"> General </label>
+                    </td>
+                </tr>
+            </table>
+            <div class="btns">
+                <button class="btn-success"> Submit </button>
+                <button class="btn-danger"> Reset</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
+<script> 
+        function confirm(){
+            alert("Are you Sure? ");
+        }
+</script>

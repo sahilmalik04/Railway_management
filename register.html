@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Book your Ticket </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container bg">
+        <h1> Railway Management </h1>
+        <hr class="hrline">
+
+        <a href="index.html"> Home </a>
+        <a href="about.html"> About </a>
+        <a href="#"> Register </a>
+        <a href="login.html"> Login </a>
+        <a href="contact.html"> Contact us </a><br>
+
+        <form class="form" action="rgstr.php" method="POST">
+            <h4> Register Yourself </h4> <hr>
+
+            <table class="table table-hover">
+                <tr>
+
+                    <td> <label for="username"> Username:
+                    <td> <input type="text" id="username" name="username"> </td> </label>
+
+                    </td>
+
+                <tr>
+
+                    <td> <label for="name"> Name:
+                    <td> <input type="text" id="name" name="name"> </td> </label>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="lstname"> Last name:
+                    <td><input type="text" id="lstname" name="lstname"> </td> </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="pswrd"> Password:
+                    <td> <input type="password" id="pswrd" name="pswrd"> </td> </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="cnfrmpswrd"> Confirm Password: </label> </td>
+                    <td> <input type="password" id="cnfrmpswrd"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="phone"> Mobile: </label> </td>
+                    <td> <input type="telephone" id="phone" name="phone"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="email"> Email: </label> </td>
+                    <td> <input type="email" id="email" name="email"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="dob"> Date of Birth: </label></td>
+                    <td> <input type="date" id="dob" name="dob"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="adress"> Permanent Adress: </label></td>
+                    <td> <textarea rows="2" cols="22" name="adress">  </textarea></td>
+                </tr>
+
+                <tr>
+                    <td> <label> City: </label></td>
+                    <td> <select name="city">
+                            <option> </option>
+                            <option value="delhi"> Delhi 
+                            <option value="mumbai"> Mumbai
+                            <option value="delhi"> Delhi
+                            <option value="ambala"> Ambala
+                            <option value="bangalore"> Bangalore
+                            <option value="hyderabad"> Hyderabad
+                            <option value="ahmedabad"> Ahmedabad
+                            <option value="kurukshetra"> Kurukshetra
+                            <option value="chennai"> Chennai
+                            <option value="kolkata"> Kolkata
+                            <option value="pune"> Pune
+                            <option value="jaipur"> Jaipur
+                            <option value="lucknow"> Lucknow
+                            <option value="ludhiana"> Ludhiana
+                            
+                            </option> </selection>
+                    </td>
+                </tr>
+
+                <td> <label> State: </label></td>
+                <td> <select name="state">
+                    <option></option>
+                    <option value="mp"> Madhya Pradesh	
+                    <option value="maharashtra"> Maharashtra	
+                    <option value="up"> Uttar Pradesh	
+                    <option value="gujarat">Gujarat
+                    <option value="ap">Andhra Pradesh
+                    <option value="chhattisgarh">Chhattisgarh	
+                    <option value="tamil">Tamil Nadu		
+                    <option value="bihar">Bihar	
+                    <option value="west bengal">West Bengal	
+                    <option value="jharkhand">Jharkhand	
+                    <option value="assam">Assam	
+                    <option value="hm">Himachal Pradesh
+                    <option value="jammu">Jammu and Kashmir
+                    <option value="uttrakhand">Uttarakhand	
+                    <option value="punjab">Punjab	
+                    <option value="haryana">Haryana			
+                    <option value="goa">Goa			
+                    <option value="chandigarh">Chandigarh	
+                        </option> </select>
+                </td>
+            </tr>
+
+            <tr>
+                
+                <td>  <label> Country:  </label> </td>
+                <td> 
+                    <select name="country"> 
+                        <option> </option>
+                        <option value="australia"> Austraila</option>
+                        <option value="bangladesh"> Bangladesh </option>
+                        <option value="canada"> Canada </option>
+                        <option value="england"> England</option>
+                        <option value="pakistan"> Pakistan </option>
+                        <option value="india"> India </option>
+                        <option value="usa"> USA </option>
+                
+                    </select>
+                </td>
+           </tr>
+            </table>
+
+            <div class="btns1">
+                <button class="btn-success"> Submit </button>
+                <button class="btn-danger"> Reset</button> 
+                </div>
+
+        </form>
+
+        <span class="advr">
+            <img src="pictures/rail-3.jpg" height="292" width="250">
+        </span>
+
+    </div>
+</body>
+
+</html>
